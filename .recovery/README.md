@@ -1,7 +1,7 @@
 # 🚨 GOAT AI DISASTER RECOVERY GUIDE
 ## Never Lose Your Code Again!
 
-> **TLDR**: Lost everything? Run `curl -s https://raw.githubusercontent.com/your-repo/claude-fast/main/.recovery/scripts/reanimate.sh | bash` and grab coffee. 30 seconds later, you're back in business.
+> **TLDR**: Lost everything? Run `curl -s https://raw.githubusercontent.com/InsightVison/Claude-Fast/main/.recovery/scripts/reanimate.sh | bash` and grab coffee. 30 seconds later, you're back in business.
 
 ---
 
@@ -10,7 +10,7 @@
 ### 🚨 CODE RED: Total System Loss (30 seconds)
 ```bash
 # THE NUCLEAR OPTION - One command to rule them all
-curl -s https://raw.githubusercontent.com/your-repo/claude-fast/main/.recovery/scripts/reanimate.sh | bash
+curl -s https://raw.githubusercontent.com/InsightVison/Claude-Fast/main/.recovery/scripts/reanimate.sh | bash
 ```
 
 ### ⚡ QUICK FIXES (Individual Issues)
@@ -157,7 +157,7 @@ gh workflow run doomsday-backup.yml
 ```bash
 # 1. Create new codespace
 # 2. Run resurrection script
-curl -s https://raw.githubusercontent.com/your-repo/claude-fast/main/.recovery/scripts/reanimate.sh | bash
+curl -s https://raw.githubusercontent.com/InsightVison/Claude-Fast/main/.recovery/scripts/reanimate.sh | bash
 
 # 3. Verify everything works
 python3 .recovery/scripts/health_check.py
@@ -283,9 +283,9 @@ python3 .recovery/scripts/health_check.py --verbose
 ```
 
 ### Emergency Contacts
-- 📧 Repository: `https://github.com/your-repo/claude-fast`
-- 🔧 Issues: `https://github.com/your-repo/claude-fast/issues`
-- 💬 Discussions: `https://github.com/your-repo/claude-fast/discussions`
+- 📧 Repository: `https://github.com/InsightVison/Claude-Fast`
+- 🔧 Issues: `https://github.com/InsightVison/Claude-Fast/issues`
+- 💬 Discussions: `https://github.com/InsightVison/Claude-Fast/discussions`
 
 ---
 

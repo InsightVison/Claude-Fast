@@ -26,7 +26,7 @@ alias restore-latest='bash .recovery/scripts/emergency_toolkit.sh restore'
 alias list-backups='ls -la .recovery/backups/'
 
 # Emergency one-liners
-alias doomsday='curl -s https://raw.githubusercontent.com/your-repo/claude-fast/main/.recovery/scripts/reanimate.sh | bash'
+alias doomsday='curl -s https://raw.githubusercontent.com/InsightVison/Claude-Fast/main/.recovery/scripts/reanimate.sh | bash'
 
 echo "🚨 GOAT AI Emergency Tools Loaded!"
 echo "💡 Try: panic, backup-now, health-check, resurrect"

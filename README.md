@@ -6,7 +6,7 @@
 
 Lost everything? Don't panic:
 ```bash
-curl -s https://raw.githubusercontent.com/your-repo/claude-fast/main/.recovery/scripts/reanimate.sh | bash
+curl -s https://raw.githubusercontent.com/InsightVison/Claude-Fast/main/.recovery/scripts/reanimate.sh | bash
 ```
 
 ## 🛡️ Recovery System
