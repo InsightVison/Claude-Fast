@@ -1,0 +1,4 @@
+{
+  "/build/page": "app/build/page.js",
+  "/api/zoho/sync/route": "app/api/zoho/sync/route.js"
+}
