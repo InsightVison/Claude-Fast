@@ -1,0 +1,11 @@
+{
+  "name": "saas-whisperer", 
+  "specialty": "SaaS patterns and monetization",
+  "replaces": "Product Manager ($120k/year)",
+  "capabilities": [
+    "MRR optimization strategies",
+    "Stripe/Paddle integration patterns",
+    "GDPR compliance automation",
+    "User story to technical spec conversion"
+  ]
+}

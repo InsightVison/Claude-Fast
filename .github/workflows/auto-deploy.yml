@@ -1,0 +1,30 @@
+name: 🚀 Auto Deploy
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: 🚀 Deploy to Server
+      if: ${{ secrets.DEPLOY_HOST }}
+      run: |
+        echo "${{ secrets.DEPLOY_KEY }}" > deploy_key
+        chmod 600 deploy_key
+        ssh -i deploy_key -o StrictHostKeyChecking=no ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} << 'ENDSSH'
+          cd ${{ secrets.DEPLOY_PATH || '~/claude-fast' }}
+          git pull origin main
+          bash DEPLOY.sh
+        ENDSSH
+    
+    - name: 🔔 Notify Success
+      if: success()
+      run: echo "✅ Deployment successful!"
+    
+    - name: 🚨 Notify Failure  
+      if: failure()
+      run: echo "❌ Deployment failed!"

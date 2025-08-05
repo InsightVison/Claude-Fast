@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  goat-engine:
+    image: goatlabs/7b-saas-engine:latest
+    ports:
+      - "8000:8000"
+      - "8001:8001" 
+    environment:
+      - GOAT_MODE=enterprise
+      - ADAPTERS=coding,saas,deployment,support
+      - QUANTIZATION=4bit
+      - TEAM_REPLACEMENT=true
+    volumes:
+      - ./adapters:/app/adapters
+      - goat_models:/app/models
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  goat-dashboard:
+    image: goatlabs/goat-dashboard:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - GOAT_API_URL=http://goat-engine:8000
+    depends_on:
+      - goat-engine
+
+volumes:
+  goat_models:

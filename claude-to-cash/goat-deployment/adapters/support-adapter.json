@@ -1,0 +1,11 @@
+{
+  "name": "support-assassin",
+  "specialty": "Customer support automation",
+  "replaces": "Support Specialist ($60k/year)", 
+  "capabilities": [
+    "Ticket resolution automation",
+    "Customer communication templates",
+    "Escalation handling",
+    "FAQ generation from support history"
+  ]
+}

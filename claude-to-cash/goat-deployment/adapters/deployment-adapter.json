@@ -1,0 +1,11 @@
+{
+  "name": "deployment-ninja",
+  "specialty": "DevOps and infrastructure", 
+  "replaces": "DevOps Engineer ($140k/year)",
+  "capabilities": [
+    "Kubernetes configuration generation",
+    "AWS/GCP infrastructure automation",
+    "CI/CD pipeline optimization",
+    "Production incident resolution"
+  ]
+}
