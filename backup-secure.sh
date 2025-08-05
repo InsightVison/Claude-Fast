@@ -12,7 +12,7 @@ TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 cp -r . "../claude-fast-backup-$TIMESTAMP" 2>/dev/null || echo "Local backup created"
 
 # Create tar archive
-tar -czf "../claude-fast-archive-$TIMESTAMP.tar.gz" . --exclude='.git' --exclude='node_modules'
+tar --exclude='.git' --exclude='node_modules' -czf "../claude-fast-archive-$TIMESTAMP.tar.gz" .
 
 # Git operations
 git add -A
