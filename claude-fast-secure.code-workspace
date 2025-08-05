@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.autofetch": true,
+		"git.autofetchPeriod": 180,
+		"files.autoSave": "afterDelay",
+		"files.autoSaveDelay": 1000,
+		"workbench.startupEditor": "readme"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.vscode-typescript-next",
+			"bradlc.vscode-tailwindcss",
+			"esbenp.prettier-vscode",
+			"ms-vscode.vscode-json"
+		]
+	}
+}
